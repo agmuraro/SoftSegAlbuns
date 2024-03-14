@@ -3,13 +3,15 @@ import java.util.ArrayList;
 public class Albuns {
     private String nome;
     private int anoLancamento;
-    private ArrayList<Musica> musicas;
+    private Musica[] musicas;
 
-    public Albuns(String nome, int anoLancamento, ArrayList<Musica> musicas) {
+    // Construtor
+    public Albuns(String nome, int anoLancamento, Musica[] musicas) {
         this.nome = nome;
         this.anoLancamento = anoLancamento;
         this.musicas = musicas;
     }
+
 
     public String getNome() {
         return nome;
@@ -27,11 +29,11 @@ public class Albuns {
         this.anoLancamento = anoLancamento;
     }
 
-    public ArrayList<musicas> getMusicas() {
+    public Musica[] getMusicas() {
         return musicas;
     }
 
-    public void setMusicas(ArrayList<musicas> musicas) {
+    public void setMusicas(Musica[] musicas) {
         this.musicas = musicas;
     }
 }
