@@ -12,6 +12,15 @@ public class Albuns {
         this.musicas = musicas;
     }
 
+    public void InfoAlbum() {
+        System.out.println("Nome do álbum: " + nome);
+        System.out.println("Ano de lançamento: " + anoLancamento);
+        System.out.println("Músicas do álbum:");
+        for (Musica musica : musicas) {
+            System.out.println("- Título: " + musica.getTitulo() + ", Artista: " + musica.getArtista());
+        }
+    }
+
 
     public String getNome() {
         return nome;
